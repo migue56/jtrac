@@ -53,6 +53,7 @@ public class User implements UserDetails, Serializable, Comparable<User> {
     private String name;
     private String password;
     private String email;
+    private String country;
     private Metadata metadata;
     private String locale;
     private boolean locked;    
@@ -259,6 +260,14 @@ public class User implements UserDetails, Serializable, Comparable<User> {
     
     public void setParent(User parent) {
         this.parent = parent;
+    }
+    
+    public String getCountry() {
+        return country;
+    }
+    
+    public void setCountry(String country) {
+        this.country = country;
     }
     
     public String getName() {

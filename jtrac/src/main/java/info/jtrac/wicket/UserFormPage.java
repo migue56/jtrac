@@ -203,7 +203,9 @@ public class UserFormPage extends BasePage {
             add(locked);
             // name ============================================================
             add(new TextField("user.name").setRequired(true).add(new ErrorHighlighter()));
-            // email ===========================================================
+            // country ============================================================
+            add(new TextField("user.country").setRequired(true).add(new ErrorHighlighter()));  
+            // email ============================================================
             add(new TextField("user.email").setRequired(true).add(new ErrorHighlighter()));
             // locale ==========================================================
             final Map<String, String> locales = getJtrac().getLocales();

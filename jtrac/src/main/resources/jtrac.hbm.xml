@@ -165,6 +165,7 @@
         <property name="email" column="email" length="50"/>
         <property name="locale" column="locale" length="20"/>
         <property name="locked" column="locked"/>
+        <property name="country" column="country"/>
         <many-to-one name="metadata" column="metadata_id"/>
         <set name="userSpaceRoles" cascade="all" inverse="true">
             <key column="user_id"/>
